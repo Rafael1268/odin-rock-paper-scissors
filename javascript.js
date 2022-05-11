@@ -39,6 +39,7 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
+// Asks the player for their choice, then checks who won. Repeated 5 times
 function game() {
     for (let i = 0; i < 5; i++) {
         let playerChoice = prompt().toLowerCase();
@@ -53,6 +54,7 @@ function game() {
     }
 }
 
+// Tells the player the final score
 function endResult() {
     if (playerScore > computerScore) {
         console.log(`You won the game! In the end you won ${playerScore} rounds and tied in ${tiedGames} rounds. Reload the page to play again.`)
